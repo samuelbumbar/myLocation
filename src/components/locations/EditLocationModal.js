@@ -42,7 +42,7 @@ const EditLocationModal = ({ open, toggleModal, startEditLocation, location, loc
 }
 
 const mapStateToProps = (state, props) => ({
-    location: state.locations[props.locationId]
+    location: state.locations ? state.locations[props.locationId] : {}
 })
 
 const mapDispatchToProps = (dispatch) => ({

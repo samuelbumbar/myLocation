@@ -98,7 +98,7 @@ const LocationForm = ({ location, categories, onSubmitCallback }) => {
 }
 
 const mapStateToProps = (state) => ({
-    categories: Object.values(state.categories || {})
+    categories: state.categories ? Object.values(state.categories) : []
 })
 
 export default connect(mapStateToProps)(LocationForm)

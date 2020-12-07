@@ -47,7 +47,7 @@ const LocationListFilters = ({ filters, sortByName, unsort, groupByCategory, ung
 }
 
 const mapStateToProps = (state) => ({
-    filters: state.filters
+    filters: state.filters || {}
 });
 
 const mapDispatchToProps = (dispatch) => ({

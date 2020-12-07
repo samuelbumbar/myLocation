@@ -71,7 +71,7 @@ const CategoriesPage = ({ locations, startRemoveCategory, startRemoveLocation })
 }
 
 const mapStateToProps = (state) => ({
-    locations: Object.values(state.locations || {})
+    locations: state.locations ? Object.values(state.locations) : []
 })
 
 const mapDispatchToProps = (dispatch) => ({

@@ -42,7 +42,7 @@ const EditCategoryModal = ({ open, toggleModal, startEditCategory, category, cat
 }
 
 const mapStateToProps = (state, props) => ({
-    category: state.categories[props.categoryId]
+    category: state.categories ? state.categories[props.categoryId] : {}
 })
 
 const mapDispatchToProps = (dispatch) => ({

@@ -51,7 +51,7 @@ const DefaultModal = ({ open, toggleModal, location }) => {
 }
 
 const mapStateToProps = (state, props) => {
-    const unprocessedLocation = state.locations[props.locationId]
+    const unprocessedLocation = state.locations ? state.locations[props.locationId] : undefined
     
     return {
         location: unprocessedLocation ? {
