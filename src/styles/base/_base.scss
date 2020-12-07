@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // Set the 'rem' measures to be x10 bigger than the pixel measures
+}
+
+body {
+  background: $off-white;
+  color: $dark-grey;
+  font-family: Montserrat, Raleway, Verdana, Geneva, Tahoma, Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+button:disabled {
+  cursor: default;
+  color: darken($off-white, 30%)
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+a {
+  color: $dark-blue;
+  transition: color .3s ease;
+}
+
+a:hover {
+  color: $dark-grey;
+  text-decoration: none;
+}
+
+span.error {
+  color: $red;
+  font-size: 14px;
+}
+
+span.error::before {
+  display: inline;
+  content: "⚠ ";
+}

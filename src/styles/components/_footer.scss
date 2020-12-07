@@ -1,0 +1,14 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: $dark-blue;
+    width: 100%;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $s-size 0;
+}

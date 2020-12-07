@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+import 'normalize.css/normalize.css';
+import 'react-responsive-modal/styles.css';
+import './styles/styles.scss'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
