@@ -20,7 +20,7 @@ const CategoriesList = ({ categories, elementSelectedCallback }) => (
 )
 
 const mapStateToProps = (state) => ({
-    categories: Object.values(state.categories)
+    categories: Object.values(state.categories) || []
 })
 
 export default connect(mapStateToProps)(CategoriesList)

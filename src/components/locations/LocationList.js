@@ -23,7 +23,7 @@ const LocationsList = ({ locations, elementSelectedCallback }) => (
 )
 
 const mapStateToProps = (state) => ({
-    locations: selectLocations(Object.values(state.locations), Object.values(state.categories), state.filters)
+    locations: selectLocations(Object.values(state.locations) || [], Object.values(state.categories) || [], state.filters || {})
         .map(location => ({
             ...location,
             category: state.categories[location.category]
