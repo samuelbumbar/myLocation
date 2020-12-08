@@ -24,6 +24,10 @@ button:disabled {
   color: darken($off-white, 30%)
 }
 
+button:focus {
+  outline: none;
+}
+
 .is-active {
   font-weight: bold;
 }
