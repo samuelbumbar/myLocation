@@ -13,7 +13,7 @@ const LocationsList = ({ locations, elementSelectedCallback }) => (
             {
                 locations.length === 0 ?
                     (
-                        <span>No locations available</span>
+                        <div className="list-item">No locations available</div>
                     ) : (
                         locations.map(location => (<LocationsListItem key={location.id} elementSelectedCallback={elementSelectedCallback} {...location} />))
                     )

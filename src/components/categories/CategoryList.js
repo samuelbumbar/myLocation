@@ -10,7 +10,7 @@ const CategoriesList = ({ categories, elementSelectedCallback }) => (
             {
                 categories.length === 0 ?
                     (
-                        <span>No categories available</span>
+                        <div className="list-item">No categories available</div>
                     ) : (
                         categories.map((category) => (<CategoriesListItem key={category.id} elementSelectedCallback={elementSelectedCallback} {...category} />))
                     )
