@@ -21,9 +21,11 @@ const Header = ({ addButtonClickedCallback, editButtonClickedCallback, removeBut
                     <div className="header__title">
                         <h1>myLocations</h1>
                     </div>
-                    <button className="button button--link" onClick={addButtonClickedCallback} disabled={editButtonEnabled || removeButtonEnabled}>Add</button>
-                    <button className="button button--link" onClick={editButtonClicked} disabled={removeButtonEnabled}>Edit</button>
-                    <button className="button button--link" onClick={removeButtonClicked} disabled={editButtonEnabled}>Remove</button>
+                    <div className="header__links">
+                        <button className="button button--link" onClick={addButtonClickedCallback} disabled={editButtonEnabled || removeButtonEnabled}>Add</button>
+                        <button className="button button--link" onClick={editButtonClicked} disabled={removeButtonEnabled}>Edit</button>
+                        <button className="button button--link" onClick={removeButtonClicked} disabled={editButtonEnabled}>Remove</button>
+                    </div>
                 </div>
             </div>
         </header>
